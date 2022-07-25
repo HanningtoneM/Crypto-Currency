@@ -17,8 +17,8 @@ const Home = ({ page, set }) => {
   return (
     <div className="container">
       <Search />
-      <div>
-        <div className="heading">
+      <div className='grid'>
+        <div className="heading hide-mobile">
           <p className="first title">#</p>
           <p className="width title">Coin</p>
           <p className="width title">Price</p>
@@ -38,7 +38,7 @@ const Home = ({ page, set }) => {
                 id={item.id}
                 marketRank={item.market_cap_rank}
                 image={item.image}
-                coinSymbol={item.symbol}
+                coinSymbol={item.symbol} 
                 currentPrice={item.current_price}
                 priceChange={item.price_change_percentage_24h}
                 totalVolume={item.total_volume}

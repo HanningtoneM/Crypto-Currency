@@ -4,14 +4,14 @@ import { NavLink } from 'react-router-dom';
 
 const NavBar = ({ page, set }) => {
   return (
-    <nav>
+    <nav className="nav-position">
       <div className="nav-bar">
         <NavLink to="/">
           {page === 'home' ? (
             <i className="uil uil-bitcoin coin-icon"></i>
           ) : (
             <i
-              className="uil uil-angle-left arrow"
+              className="uil uil-angle-left arrow coin-icon"
               onClick={() => set('home')}
             ></i>
           )}
@@ -19,7 +19,7 @@ const NavBar = ({ page, set }) => {
         <div className="logo">
           <FaCoins className="icon" />
           <h1 className="nav-header">
-            Coin<span className="purple">Prices</span>
+            Crypto<span className="purple">Webs</span>
           </h1>
         </div>
         <div className="mic">

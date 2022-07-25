@@ -12,8 +12,8 @@
 }
 
 :root {
-  --hue-color: 250;
-  --first-color: hsl(var(--hue-color), 69%, 61%);
+  --hue-color: 280;
+  --first-color: hsl(var(--hue-color), 100%, 70%);
   --first-color-second: hsl(var(--hue-color), 69%, 61%);
   --first-color-alt: hsl(var(--hue-color), 57%, 53%);
   --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
@@ -61,7 +61,7 @@ body {
 
 .nav-bar {
   display: flex;
-  box-shadow: 0 0 7px var(--bg-color);
+  box-shadow: 0 0 20px var(--bg-color);
   padding: 0.6rem 0;
 }
 
@@ -113,7 +113,7 @@ body {
 }
 
 .container {
-  max-width: 1140px;
+  max-width: 71rem;
   margin: auto;
   margin-top: 2rem;
   margin-bottom: 3rem;
@@ -167,6 +167,7 @@ body {
 
 .link {
   text-decoration: none;
+  box-shadow: 10px 10px 5px var(--body-color);
 }
 
 .coin-icon {
@@ -181,7 +182,7 @@ body {
 }
 
 .detail-container .content {
-  max-width: 740px;
+  max-width: 71rem;
   margin: 1rem auto;
   padding: 0.7rem 1rem;
   display: flex;
@@ -350,13 +351,29 @@ td {
   color: var(--text-color);
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (min-width: 1024px) {
+  .hide-desktop {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 728px) {
+  .hide-mobileIpad {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
   .hide-mobile {
     display: none;
   }
 
+  body {
+    margin: 1rem;
+  }
+
   .mic {
-    width: 13%;
+    width: 10%;
   }
 
   .micro {
@@ -385,6 +402,12 @@ td {
     justify-content: space-evenly;
     padding: 0;
     padding: 0.5rem 0;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
   }
 
   .title {
@@ -416,5 +439,19 @@ td {
   td,
   th {
     padding: 3px;
+  }
+
+  .mobileNext {
+    padding-right: 10px;
+  }
+
+  .coin-icon {
+    margin-left: 0;
+  }
+
+  .symbol {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
