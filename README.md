@@ -5,7 +5,7 @@ This is a web app that fetches data from CoinGecko API and displays the global c
 
 ## Live Demo
 
-[cryptocurrency market]()
+[cryptocurrency market](https://cryptocurrencyhanningtone.netlify.app/)
 
 ## Built With
 
