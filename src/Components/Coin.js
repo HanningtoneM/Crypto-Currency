@@ -20,7 +20,7 @@ const Coin = ({
           <i className="uil uil-arrow-circle-right next-btn  border: 2px solid red; hide-desktop mobileNext"></i>
         </div>
         <div className="next">
-          <p className="coin-name">{coinName}</p>
+          <p className="coin-name">{coinName.toUpperCase()}</p>
           <i className="uil uil-arrow-circle-right next-btn hide-mobile"></i>
         </div>
       </div>
