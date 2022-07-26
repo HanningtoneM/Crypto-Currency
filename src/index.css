@@ -454,4 +454,10 @@ td {
     flex-direction: row;
     justify-content: space-between;
   }
+
+  .warning {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
