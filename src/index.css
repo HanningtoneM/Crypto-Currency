@@ -54,7 +54,7 @@
 body {
   font-family: var(--body-font);
   background-image: url('./Assets/threecrypto.webp');
-  background-color: var(--body-color);
+  background-color: #191970;
   background-blend-mode: multiply;
   background-attachment: fixed;
 }
